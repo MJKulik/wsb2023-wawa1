@@ -1,0 +1,25 @@
+{   
+    {
+        "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+        "contentVersion": "1,0,0,0",
+        "apiProfile": "",
+        "parameters": { 
+            "StorageName": {
+                "type": "string",
+                "metadata": {   
+                    "description": "Podaj nazwe konta storegowego"
+                }
+            }
+         },
+        "variables": [  ],
+        "functions": [  ],
+        "resources": [ 
+            {
+                "name": "[parameters('StorageName')]",
+                "type": "Microsoft.Storage/storageAccounts",
+            }
+         ],
+        "outputs": {  }
+      }
+
+}
